@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+{% block body %}
+
+    <style>
+    .banner-area {
+  background: url({% static 'img/work.jpeg' %}) no-repeat center center/cover;
+}
+    </style>
+<section class="banner-area relative">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row fullscreen justify-content-center align-items-center">
+					<div class="col-lg-8">
+						<div class="banner-content text-center">
+{#							<h4 class="text-uppercase text-white">We make you smile, Your smile is our business</h4>#}
+							<h1 class="text-uppercase text-white">DOCUMENTS REQUIRED</h1>
+{#							<a href="#bottom"  id="scrollTo"  class="primary-btn banner-btn ">Explore Us</a>#}
+
+                        </div>
+                        <ul style="color: white;line-height: 40px;font-size: 16px">
+                                <li><strong>1) Loanee/Guarantee :</strong> Photos (5 copy), Aadhaar Card, Pan Card, Voter Card, Residential Certificate, Bank Statement (6 months) , Cheque (3 Copy)</li>
+                                <li><strong>2) Service Loan :</strong> Service ID, ITR/Form 16, Salary slip 3 months</li>
+                                <li><strong>3) Vehicle Loan :</strong>Valid Driving License </li>
+                                <li><strong>4) Business Loan :</strong>Shop, License Patta/ Lease deed ITR Audited Statement NOC </li>
+                                <li><strong>5) Property Loan :</strong>Land Photo (4 side) Gift/ Sale deed Jamabandi (New/Old)
+Land Ownership, Non Encumbrance,  Land Variation, Trace Map, Mautation NOC </li>
+                            </ul>
+<div style="padding-top: 60px" class="banner-content text-center">
+                        <i style="color: white;font-size: 60px" class="fa fa-angle-double-down" aria-hidden="true"></i>
+</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+<div class="col-lg-6 mt-30">
+						<form id="myForm" action="" method="post" class="contact-form">
+							<div class="single-input color-2 mb-10">
+								<input type="text" name="fname" placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
+							</div>
+							<div class="single-input color-2 mb-10">
+								<input type="email" name="email" placeholder="Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required>
+							</div>
+							<div class="single-input color-2 mb-10">
+								<input type="text" name="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'" required>
+							</div>
+
+							<div class="single-input color-2 mb-10">
+								<textarea name="message" placeholder="Type your message here..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type your message here...'" required></textarea>
+							</div>
+							<div class="d-flex justify-content-end"><button class="mt-10 primary-btn d-inline-flex text-uppercase align-items-center">Send Message<span class="lnr lnr-arrow-right"></span></button></div>
+							<div class="alert"></div>
+						</form>
+					</div>
+{% endblock %}

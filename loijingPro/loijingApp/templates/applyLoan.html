@@ -1,0 +1,389 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{% static 'img/cirl.png' %}">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Loijing Finance</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+		<link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/message.css' %}">
+	</head>
+
+<style>
+    .studio-area:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: url({% static 'img/work.jpeg' %}) no-repeat center center/cover;
+  z-index: 1;
+}
+
+    @media only screen and (max-width: 600px) {
+
+        .fontforDoc{
+            font-size: 25px;
+        }
+
+        .headerheight{
+            height: 66px!important;
+        }
+        .lineclass{
+            line-height: 25px!important;
+        }
+        .logodesign{
+      width: 40px!important;
+      height: 40px!important;
+  }
+
+}
+</style>
+
+  <style>
+      .banner-area .overlay-bg {
+  background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+}
+
+                .banner-area {
+                    background: url({% static 'img/work.jpeg' %}) no-repeat center center/cover;
+                }
+
+                .labledesign {
+                    font-weight: bold;
+                    color: black;
+                }
+
+                input::placeholder {
+                    color: darkslategray;
+                }
+                textarea::placeholder {
+                    color: darkslategray;
+                }
+                .inputcolor{
+                    background: #e0f2f1!important;
+                }
+
+                .section-full {
+ padding: 50px 0!important;
+}
+
+                .product-area-title {
+    padding-bottom: 20px!important;
+}
+
+
+    @media (max-width: 767px) {
+  .default-header .main-menu {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #4a4fad;
+    padding: 30px 20px;
+  }
+  .default-header .main-menu a {
+    margin: 5px 20px !important;
+  }
+  .default-header .mobile-btn {
+    display: block !important;
+    font-size: 36px !important;
+    position: absolute;
+    top: -26px!important;
+    right: 0;
+  }
+
+
+}
+    </style>
+
+	<body id="page-top">
+{% if messages %}
+    {% for message in messages %}
+        <span class="validate_data" id="name_status">{{ message }}</span>
+    {% endfor %}
+
+{% endif %}
+        <span id="name_status"></span>
+
+
+		<div id="top"></div>
+		<!-- Start Header Area -->
+		<header class="default-header">
+			<div class="sticky-header headerheight" >
+				<div class="container">
+					<div class="header-content d-flex justify-content-between align-items-center">
+						<div class="logo">
+							<a href="{% url 'loijingApp:home' %}"  class="smooth"><img class="logodesign" style="width: 60px;height: 60px;" src="{% static 'img/cirl.png' %}" alt=""></a>
+						</div>
+						<div class="right-bar d-flex align-items-center">
+							<nav class="d-flex align-items-center">
+								<ul class="main-menu">
+									<li><a href="{% url 'loijingApp:home' %}" onclick="changeToHome()">Home</a></li>
+									<li><a href="{% url 'loijingApp:gallery' %}" onclick="changeTogallery()">Gallery</a></li>
+
+								</ul>
+								<a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
+							</nav>
+
+							<div class="header-social d-flex align-items-center">
+								<a href="#"><i style="color: wheat" class="fa fa-facebook"></i></a>
+								<a href="#"><i style="color: wheat"  class="fa fa-twitter"></i></a>
+								<a href="#"><i  style="color: wheat"  class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+<section class="banner-area relative " style="min-height: 100vh;">
+			<div class="overlay overlay-bg"></div>
+			<div class="container" style="padding-top: 100px">
+				<div id="Doc" class="row  justify-content-center align-items-center">
+					<div class="col-lg-8 movedown">
+						<div class="banner-content text-center">
+							<h1 class="text-uppercase text-white fontforDoc">DOCUMENTS REQUIRED</h1>
+
+                        </div>
+                        <ul class="lineclass" style="color: white;line-height: 40px;font-size: 16px;">
+                                <li><strong>1) Loanee/Guarantee :</strong> Photos (5 copy), Aadhaar Card, Pan Card, Voter Card, Residential Certificate, Bank Statement (6 months) , Cheque (3 Copy)</li>
+                                <li><strong>2) Service Loan :</strong> Service ID, ITR/Form 16, Salary slip 3 months</li>
+                                <li><strong>3) Vehicle Loan :</strong>Valid Driving License </li>
+                                <li><strong>4) Business Loan :</strong>Shop, License Patta/ Lease deed ITR Audited Statement NOC </li>
+                                <li><strong>5) Property Loan :</strong>Land Photo (4 side) Gift/ Sale deed Jamabandi (New/Old)
+Land Ownership, Non Encumbrance,  Land Variation, Trace Map, Mautation NOC </li>
+                            </ul>
+<div style="padding-top: 60px" class="banner-content text-center">
+                        <i style="color: white;font-size: 60px" class="fa fa-angle-double-down" aria-hidden="true"></i>
+</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+        <section id="contact" class="section-full gray-bg">
+			<div id="bottom" class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+{#							<p class="text-uppercase">Latest From Blog</p>#}
+							<h2 class="h1">Apply Now</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 mt-30">
+{#						<p>Dramatically reintermediate effective applications after high-payoff core competencies. Authoritatively optimize collaborative benefits for error-free communities. Dramatically reintermediate effective applications after high-payoff core competencies. Authoritatively optimize collaborative benefits for error-free communities.</p>#}
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="address mt-20">
+									<h6 class="text-uppercase mb-15">Applicable Form Charges : Rs. 500 /-</h6>
+									<ul>
+                                        {% for types in ChargesApplicable %}
+                                        <li><strong>~</strong> {{ types.ApplicableFor }}</li>
+                                        {% endfor %}
+
+                                    </ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-6 mt-30">
+						<form id="ApplyForLoan" action="{% url 'loijingApp:ApplyForLoan' %}" method="post" class="contact-form"> {% csrf_token %}
+							<div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Full Name*</lable>
+								<input class="inputcolor" style="text-transform:uppercase;" type="text" name="name" id="name" placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" >
+							</div>
+
+                            <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Phone No.*</lable>
+								<input class="inputcolor"  type="number" name="phone" id="phone"  placeholder="Phone No." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone No.'" >
+							</div>
+                            <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Phone No. (alternate)</lable>
+								<input class="inputcolor"  type="number" name="altphone" id="altphone"  placeholder="Phone No. (alternate)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone No. (alternate)'" >
+							</div>
+							<div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Present Address*</lable>
+								<input  class="inputcolor" type="text" name="preaddress" id="preaddress" placeholder="Present Address"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Present Address'" >
+							</div>
+							<div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Permanent Address*</lable>
+								<input class="inputcolor" type="text" name="peraddress" id="peraddress" placeholder="Permanent Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Permanent Address'" >
+							</div>
+                            <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Landmark*</lable>
+								<input class="inputcolor" type="text" name="landmark" id="landmark" placeholder="Landmark " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Landmark'" >
+							</div>
+                             <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Occupation</lable>
+								<input class="inputcolor" type="text" name="occupation" id="occupation" placeholder="Occupation " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Occupation'">
+							</div>
+                            <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Monthly Income</lable>
+								<input class="inputcolor" type="text" name="income" id="income" placeholder="Monthly Income " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Monthly Income'">
+							</div>
+
+
+                            <div class="form-group">
+                                <label class="labledesign" for="Product">Type of Product*</label>
+                                <select class="form-control inputcolor" id="product" name="product">
+                                    <option value="Select Product" >Select Product</option>
+                                    <option value="Entrepreneurship loan"> Entrepreneurship loan</option>
+                                    <option value="Business expansion loan">Business expansion loan</option>
+                                    <option value="Service/Pension loan">Service/Pension loan</option>
+                                    <option value="Machinery loan"> Machinery loan</option>
+                                    <option value="Loan against property"> Loan against property</option>
+                                    <option value="Agricultural loan"> Agricultural loan</option>
+                                    <option value="Fishery/Piggery/Poultry loan"> Fishery/Piggery/Poultry loan</option>
+                                </select>
+                            </div>
+
+                            <div class="single-input color-2 mb-10">
+                               <lable class="labledesign">Purpose of loan*</lable>
+								<textarea class="inputcolor" id="message" name="message" placeholder="Purpose of loan" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Purpose of loan'" ></textarea>
+							</div>
+
+                            <input checked type="checkbox" name="check" id="check" value="Bike"> I confirmed that above mention information are true and correct to my knowledge.<br>
+
+							<div class="d-flex justify-content-end"><button onclick="submitContactUs()" type="button"  class="mt-10 primary-btn d-inline-flex text-uppercase align-items-center">Send<span class="lnr lnr-arrow-right"></span></button></div>
+							<div class="alert"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+		<footer class="section-full">
+			<div class="container">
+				<div class="row">
+
+
+				</div>
+				<div class="footer-bottom d-flex justify-content-between align-items-center">
+					<p class="footer-text m-0">Copyright &copy; 2018  |  All rights reserved to <a href="https://loijingfinance.com"><span style="font-weight: bold">Loijing Finance</span></a>. Designed and Developed by <a target="_blank" href="https://nextfifth.com"><span style="font-weight:bold">NextFifth Technologies</span></a>.</p>
+					<div class="footer-social d-flex align-items-center">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+
+
+		</footer>
+
+		<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script>
+		<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+		<script src="{% static 'js/jquery.sticky.js' %}"></script>
+		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'js/mixitup.min.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+
+        <script>
+$('.scrollTo').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+
+
+});
+
+function changeToHome() {
+    window.location.href = '/'
+
+}
+
+function changeTogallery() {
+    window.location.href = '{% url "loijingApp:gallery" %}'
+
+}
+
+
+    </script>
+        <script>
+            $( document ).ready(function() {
+   $('#Doc').css('height','0');
+});
+        </script>
+
+
+     <script type="application/javascript">
+      function submitContactUs() {
+            var name = $('#name').val();
+            var phone = $('#phone').val();
+            var altphone = $('#altphone').val();
+            var preaddress = $('#preaddress').val();
+            var peraddress = $('#peraddress').val();
+            var landmark = $('#landmark').val();
+            var occupation = $('#occupation').val();
+            var income = $('#income').val();
+            var product = $('#product').val();
+            var message = $('#message').val();
+            var check = $('#check').val();
+
+
+            if (name ==='' ||phone ==='' ||preaddress ==='' ||peraddress ===''||landmark ===''||product ===''||message ===''||check ==='' ){
+                 $('#name_status').addClass('validate_data');
+                $('#name_status').html('* fields are required.');
+                $('#name_status').fadeIn().fadeOut(2000);
+
+            }
+            else {
+                $('#ApplyForLoan').submit()
+            }
+
+
+        }
+      </script>
+
+
+      <script> $('#name_status').fadeIn().fadeOut(2000);</script>
+
+	</body>
+</html>

@@ -1,0 +1,452 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{% static 'img/loiii.png' %}">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Loijing Finance</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+		<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	</head>
+
+<style>
+    .studio-area:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: url({% static 'img/work.jpeg' %}) no-repeat center center/cover;
+  z-index: 1;
+}
+
+    @media only screen and (max-width: 720px) {
+  .movedown{
+      padding-top: 260px;
+
+  }
+        .fontforDoc{
+            font-size: 25px;
+        }
+
+        .headerheight{
+            height: 66px!important;
+        }
+}
+
+
+{##}
+{#     @media only screen and (max-width: 360px) {#}
+{#  .movedown{#}
+{#      padding-top: 160px!important;#}
+{##}
+{#  }#}
+{#        .fontforDoc{#}
+{#            font-size: 18px;#}
+{#            line-height: 28px!important;#}
+{#        }#}
+{##}
+{#        .headerheight{#}
+{#            height: 66px!important;#}
+{#        }#}
+{#        .moveForMobile{#}
+{#            margin-top: 10px;#}
+{#        }#}
+{#}#}
+</style>
+
+  <style>
+                .banner-area {
+                    background: url({% static 'img/work.jpeg' %}) no-repeat center center/cover;
+                }
+
+                .labledesign {
+                    font-weight: bold;
+                    color: black;
+                }
+
+                input::placeholder {
+                    color: darkslategray;
+                }
+                textarea::placeholder {
+                    color: darkslategray;
+                }
+                .inputcolor{
+                    background: #e0f2f1!important;
+                }
+
+                .section-full {
+ padding: 50px 0!important;
+}
+
+                .product-area-title {
+    padding-bottom: 20px!important;
+}
+
+
+    @media (max-width: 767px) {
+  .default-header .main-menu {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #4a4fad;
+    padding: 30px 20px;
+  }
+  .default-header .main-menu a {
+    margin: 5px 20px !important;
+  }
+  .default-header .mobile-btn {
+    display: block !important;
+    font-size: 36px !important;
+    position: absolute;
+    top: -26px!important;
+    right: 0;
+  }
+}
+    </style>
+
+	<body id="page-top">
+
+		<div id="top"></div>
+		<!-- Start Header Area -->
+		<header class="default-header">
+			<div class="sticky-header headerheight" >
+				<div class="container">
+					<div class="header-content d-flex justify-content-between align-items-center">
+						<div class="logo">
+							<a href="#top" class="smooth"><img style="width: 100px!important;height: 50px!important;" src="{% static 'img/loiii.png' %}" alt=""></a>
+						</div>
+						<div class="right-bar d-flex align-items-center">
+							<nav class="d-flex align-items-center">
+								<ul class="main-menu">
+									<li><a href="{% url 'loijingApp:home' %}" onclick="changeToHome()">Home</a></li>
+{#									<li><a href="#services">Why Us</a></li>#}
+{#									<li><a href="#protfolio">Loans</a></li>#}
+{#									<li><a href="#team">Team</a></li>#}
+{#									<li><a href="#blog">Blog</a></li>#}
+{#									<li><a href="#contact">Contact</a></li>#}
+								</ul>
+								<a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
+							</nav>
+{#							<div class="search relative">#}
+{#								<span class="lnr lnr-magnifier"></span>#}
+{#								<form action="#" class="search-field">#}
+{#									<input type="text" placeholder="Search here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search here'">#}
+{#									<button class="search-submit"><span class="lnr lnr-magnifier"></span></button>#}
+{#								</form>#}
+{#							</div>#}
+							<div class="header-social d-flex align-items-center">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+<section class="banner-area relative " style="min-height: 100vh!important;">
+			<div class="overlay overlay-bg" style="min-height: 100vh!important;"></div>
+			<div class="container" style="min-height: 100vh!important;">
+				<div style="min-height: 100vh!important;" class="row fullscreen justify-content-center align-items-center">
+					<div class="col-lg-8 movedown">
+						<div class="banner-content text-center">
+{#							<h4 class="text-uppercase text-white">We make you smile, Your smile is our business</h4>#}
+							<h1 class="text-uppercase text-white fontforDoc">DOCUMENTS REQUIRED</h1>
+{#							<a href="#bottom"  id="scrollTo"  class="primary-btn banner-btn ">Explore Us</a>#}
+
+                        </div>
+                        <ul style="color: white;line-height: 28px;font-size: 16px">
+                                <li><strong>1) Loanee/Guarantee :</strong> Photos (5 copy), Aadhaar Card, Pan Card, Voter Card, Residential Certificate, Bank Statement (6 months) , Cheque (3 Copy)</li>
+                                <li><strong>2) Service Loan :</strong> Service ID, ITR/Form 16, Salary slip 3 months</li>
+                                <li><strong>3) Vehicle Loan :</strong>Valid Driving License </li>
+                                <li><strong>4) Business Loan :</strong>Shop, License Patta/ Lease deed ITR Audited Statement NOC </li>
+                                <li><strong>5) Property Loan :</strong>Land Photo (4 side) Gift/ Sale deed Jamabandi (New/Old)
+Land Ownership, Non Encumbrance,  Land Variation, Trace Map, Mautation NOC </li>
+                            </ul>
+<div style="padding-top: 60px" class="banner-content text-center">
+                        <i style="color: white;font-size: 60px" class="fa fa-angle-double-down" aria-hidden="true"></i>
+</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+{#        <div class="row">#}
+{##}
+{#        						<div style="" class="col-lg-12 col-lg-offset-3">#}
+{#<div class="col-lg-6 mt-30">#}
+{#						<form id="myForm" action="" method="post" class="contact-form">#}
+{#							<div class="single-input color-2 mb-10">#}
+{#                                <lable class="labledesign">Full Name*</lable>#}
+{#								<input class="inputcolor" style="text-transform:uppercase;" type="text" name="fname" placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>#}
+{#							</div>#}
+{#							<div class="single-input color-2 mb-10">#}
+{#                                <lable class="labledesign">Present Address*</lable>#}
+{#								<input  class="inputcolor" type="text" name="email" placeholder="Present Address"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Present Address'" required>#}
+{#							</div>#}
+{#							<div class="single-input color-2 mb-10">#}
+{#                                <lable class="labledesign">Permanent Address*</lable>#}
+{#								<input class="inputcolor" type="text" name="subject" placeholder="Permanent Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Permanent Address'" required>#}
+{#							</div>#}
+{##}
+{#							<div class="single-input color-2 mb-10">#}
+{#								<textarea name="message" placeholder="Type your message here..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type your message here...'" required></textarea>#}
+{#							</div>#}
+{#							<div class="d-flex justify-content-end"><button class="mt-10 primary-btn d-inline-flex text-uppercase align-items-center">Send Message<span class="lnr lnr-arrow-right"></span></button></div>#}
+{#							<div class="alert"></div>#}
+{#						</form>#}
+{#					</div>#}
+{##}
+{#                                </div>#}
+{##}
+{##}
+{#</div>#}
+
+
+        <section id="contact" class="section-full gray-bg moveForMobile">
+			<div id="bottom" class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+{#							<p class="text-uppercase">Latest From Blog</p>#}
+							<h2 class="h1">Apply Now</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 mt-30">
+{#						<p>Dramatically reintermediate effective applications after high-payoff core competencies. Authoritatively optimize collaborative benefits for error-free communities. Dramatically reintermediate effective applications after high-payoff core competencies. Authoritatively optimize collaborative benefits for error-free communities.</p>#}
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="address mt-20">
+									<h6 class="text-uppercase mb-15">Applicable Form Charges : Rs. 500 /-</h6>
+									<ul>
+                                        <li><strong>~</strong> Entrepreneurship loan</li>
+                                        <li><strong>~</strong> Business expansion loan</li>
+                                        <li><strong>~</strong> Service/Pension loan</li>
+                                        <li><strong>~</strong> Machinery loan</li>
+                                        <li><strong>~</strong> Loan against property</li>
+                                        <li><strong>~</strong> Agricultural loan</li>
+                                        <li><strong>~</strong> Fishery/Piggery/Poultry loan</li>
+                                    </ul>
+								</div>
+							</div>
+{#							<div class="col-sm-6">#}
+{#								<div class="address mt-20">#}
+{#									<h6 class="text-uppercase mb-15">Contact</h6>#}
+{#									<a href="tel:0000">+91-9383219377 </a> <br>#}
+{#									<a href="mailto:contact@loijing.com"  >contact@loijing.com</a>#}
+{#								</div>#}
+{#							</div>#}
+						</div>
+					</div>
+					<div class="col-lg-6 mt-30">
+						<form id="myForm" action="" method="post" class="contact-form">
+							<div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Full Name*</lable>
+								<input class="inputcolor" style="text-transform:uppercase;" type="text"  placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
+							</div>
+
+                            <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Phone No.*</lable>
+								<input class="inputcolor"  type="number"  placeholder="Phone No." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone No.'" required>
+							</div>
+                            <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Phone No. (alternate)</lable>
+								<input class="inputcolor"  type="number"  placeholder="Phone No. (alternate)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone No. (alternate)'" >
+							</div>
+							<div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Present Address*</lable>
+								<input  class="inputcolor" type="text"  placeholder="Present Address"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Present Address'" required>
+							</div>
+							<div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Permanent Address*</lable>
+								<input class="inputcolor" type="text" placeholder="Permanent Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Permanent Address'" required>
+							</div>
+                            <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Landmark*</lable>
+								<input class="inputcolor" type="text"  placeholder="Landmark " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Landmark'" required>
+							</div>
+                             <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Occupation</lable>
+								<input class="inputcolor" type="text"  placeholder="Occupation " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Occupation'">
+							</div>
+                            <div class="single-input color-2 mb-10">
+                                <lable class="labledesign">Monthly Income</lable>
+								<input class="inputcolor" type="text"  placeholder="Monthly Income " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Monthly Income'">
+							</div>
+
+
+                            <div class="form-group">
+                                <label class="labledesign" for="Product">Type of Product*</label>
+                                <select class="form-control inputcolor" id="Product">
+                                    <option value="Select Product" >Select Product</option>
+                                    <option value="Entrepreneurship loan"> Entrepreneurship loan</option>
+                                    <option value="Business expansion loan">Business expansion loan</option>
+                                    <option value="Service/Pension loan">Service/Pension loan</option>
+                                    <option value="Machinery loan"> Machinery loan</option>
+                                    <option value="Loan against property"> Loan against property</option>
+                                    <option value="Agricultural loan"> Agricultural loan</option>
+                                    <option value="Fishery/Piggery/Poultry loan"> Fishery/Piggery/Poultry loan</option>
+                                </select>
+                            </div>
+
+                            <div class="single-input color-2 mb-10">
+                               <lable class="labledesign">Purpose of loan*</lable>
+								<textarea class="inputcolor" name="message" placeholder="Purpose of loan" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Purpose of loan'" required></textarea>
+							</div>
+
+                            <input checked type="checkbox" name="vehicle1" value="Bike"> I confirmed that above mention information are true and correct to my knowledge.<br>
+
+							<div class="d-flex justify-content-end"><button disabled class="mt-10 primary-btn d-inline-flex text-uppercase align-items-center">Send<span class="lnr lnr-arrow-right"></span></button></div>
+							<div class="alert"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+		<footer class="section-full">
+			<div class="container">
+				<div class="row">
+{#					<div class="col-lg-3 col-sm-6">#}
+{#						<div class="single-footer-widget">#}
+{#							<h6 class="text-white text-uppercase mb-20">About Agency</h6>#}
+{#							<p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>#}
+{#						</div>#}
+{#					</div>#}
+
+{#					<div class="col-lg-3 col-sm-6">#}
+{#						<div class="single-footer-widget">#}
+{#							<h6 class="text-white text-uppercase mb-20">Navigation Links</h6>#}
+{#							<div class="d-flex">#}
+{#								<ul class="footer-nav">#}
+{#									<li><a href="#">Home</a></li>#}
+{#									<li><a href="#">Features</a></li>#}
+{#									<li><a href="#">Services</a></li>#}
+{#									<li><a href="#">Portfolio</a></li>#}
+{#								</ul>#}
+{#								<ul class="ml-30 footer-nav">#}
+{#									<li><a href="#">Team</a></li>#}
+{#									<li><a href="#">Pricing</a></li>#}
+{#									<li><a href="#">Blog</a></li>#}
+{#									<li><a href="#">Contact</a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+
+{#					<div class="col-lg-3 col-sm-6">#}
+{#						<div class="single-footer-widget">#}
+{#							<h6 class="text-white text-uppercase mb-20">Newsletter</h6>#}
+{#							<p>For business professionals caught between high OEM price and mediocre print and graphic output,</p>#}
+{#							<div id="mc_embed_signup">#}
+{#								<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative d-flex justify-content-center">#}
+{#									<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>#}
+{#									<div style="position: absolute; left: -5000px;">#}
+{#										<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">#}
+{#									</div>#}
+{#									<button type="submit" class="newsletter-btn" name="subscribe"><span class="lnr lnr-location"></span></button>#}
+{#									<div class="info"></div>#}
+{#								</form>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+
+{#					<div class="col-lg-3 col-sm-6">#}
+{#						<div class="single-footer-widget">#}
+{#							<h6 class="text-white text-uppercase mb-20">Instafeed</h6>#}
+{#							<ul class="instafeed d-flex flex-wrap">#}
+{#								<li><img src="{% static 'img/i1.jpg' %}" alt=""></li>#}
+{#								<li><img src="{% static 'img/i2.jpg' %}" alt=""></li>#}
+{#								<li><img src="{% static 'img/i3.jpg' %}" alt=""></li>#}
+{#								<li><img src="{% static 'img/i4.jpg' %}" alt=""></li>#}
+{#								<li><img src="{% static 'img/i5.jpg' %}" alt=""></li>#}
+{#								<li><img src="{% static 'img/i6.jpg' %}" alt=""></li>#}
+{#								<li><img src="{% static 'img/i7.jpg' %}" alt=""></li>#}
+{#								<li><img src="{% static 'img/i8.jpg' %}" alt=""></li>#}
+{#							</ul>#}
+{#						</div>#}
+{#					</div>#}
+
+				</div>
+				<div class="footer-bottom d-flex justify-content-between align-items-center">
+					<p class="footer-text m-0">Copyright &copy; 2018  |  All rights reserved to <a href="https://loijingfinance.com"><span style="font-weight: bold">Loijing Finance</span></a> Designed and Developed by <a href="https://nextfifth.com"><span style="font-weight:bold">NextFifth Technologies</span></a>.</p>
+					<div class="footer-social d-flex align-items-center">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+{#						<a href="#"><i class="fa fa-behance"></i></a>#}
+					</div>
+				</div>
+			</div>
+
+
+		</footer>
+
+		<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script>
+		<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+		<script src="{% static 'js/jquery.sticky.js' %}"></script>
+		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'js/mixitup.min.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+
+        <script>
+$('.scrollTo').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+
+
+});
+
+function changeToHome() {
+    window.location.href = '/'
+
+}
+
+    </script>
+	</body>
+</html>
